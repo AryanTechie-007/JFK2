@@ -1,7 +1,14 @@
 {
-  "activeBranch": "main",
-  "mode": "integrated-all-branches",
-  "module": "All 6 Team Workstreams Integrated",
+  "activeBranch": "iris",
+  "mode": "standalone-agent",
+  "module": "Iris — Subscription & Recurring Specialist",
+  "agent": {
+    "name": "iris",
+    "type": "agent",
+    "path": "src/agents/iris",
+    "standaloneTest": "npm run test:iris",
+    "description": "Iris Subscription & Recurring Bill Specialist Agent"
+  },
   "parallelWorkstreams": [
     { "branch": "nova", "type": "agent", "path": "src/agents/nova", "description": "Nova — Real-Time Budget Guardian (V4)" },
     { "branch": "john", "type": "agent", "path": "src/agents/john", "description": "John — Master Orchestrator & Coach" },
