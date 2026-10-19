@@ -1,7 +1,14 @@
 {
-  "activeBranch": "main",
-  "mode": "integrated-all-branches",
-  "module": "All 6 Team Workstreams Integrated",
+  "activeBranch": "atlas",
+  "mode": "standalone-agent",
+  "module": "Atlas — Long-Term Goal & Savings Strategist",
+  "agent": {
+    "name": "atlas",
+    "type": "agent",
+    "path": "src/agents/atlas",
+    "standaloneTest": "npm run test:atlas",
+    "description": "Atlas Long-Term Goal & Savings Strategist Agent"
+  },
   "parallelWorkstreams": [
     { "branch": "nova", "type": "agent", "path": "src/agents/nova", "description": "Nova — Real-Time Budget Guardian (V4)" },
     { "branch": "john", "type": "agent", "path": "src/agents/john", "description": "John — Master Orchestrator & Coach" },
