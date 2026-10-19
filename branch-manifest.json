@@ -1,7 +1,14 @@
 {
-  "activeBranch": "main",
-  "mode": "integrated-all-branches",
-  "module": "All 6 Team Workstreams Integrated",
+  "activeBranch": "sentinel",
+  "mode": "standalone-tool",
+  "module": "Sentinel — Deterministic Financial Calculator & Predictor",
+  "tool": {
+    "name": "sentinel",
+    "type": "tool",
+    "path": "src/tools/sentinel",
+    "standaloneTest": "npm run test:sentinel",
+    "description": "Sentinel Deterministic Financial Calculator & Predictor Tool"
+  },
   "parallelWorkstreams": [
     { "branch": "nova", "type": "agent", "path": "src/agents/nova", "description": "Nova — Real-Time Budget Guardian (V4)" },
     { "branch": "john", "type": "agent", "path": "src/agents/john", "description": "John — Master Orchestrator & Coach" },
